@@ -83,7 +83,7 @@
 <meta name="description" content="When you are in the dark,the face of the unknown, do not be afraid, follow your heart to explore.">
 <meta property="og:type" content="website">
 <meta property="og:title" content="暗夜前行">
-<meta property="og:url" content="http://www.darknight.cn/index.html">
+<meta property="og:url" content="http://www.darknight.cn/categories/分享/index.html">
 <meta property="og:site_name" content="暗夜前行">
 <meta property="og:description" content="When you are in the dark,the face of the unknown, do not be afraid, follow your heart to explore.">
 <meta name="twitter:card" content="summary">
@@ -106,7 +106,7 @@
   };
 </script>
 
-  <title> 暗夜前行 </title>
+  <title> 分类: 分享 | 暗夜前行 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -133,9 +133,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left 
-   page-home 
- ">
+  <div class="container one-collumn sidebar-position-left  ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -262,166 +260,40 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
-    
-      
 
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/04/23/cloud9-ngrok-shadowsocks-fuck-gfw/" itemprop="url">
-                  Cloud9配合ngrok搭建shadowsocks免费vpn实现科学上网
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-04-23T11:16:11+08:00" content="2016-04-23">
-              2016-04-23
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/分享/" itemprop="url" rel="index">
-                    <span itemprop="name">分享</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/04/23/cloud9-ngrok-shadowsocks-fuck-gfw/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/04/23/cloud9-ngrok-shadowsocks-fuck-gfw/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>😳好吧标题略长</p>
-<p>###原理<br>       使用cloud9提供的开发环境vps安装shadowsocks服务端，因为cloud9的vps没有提供公网ip，所以使用ngrok的tcp tunnel 进行内网穿透,穿透后用获取来的IP和端口配置shadowsocks客户端。</p>
-<p>###准备工作</p>
-<ul>
-<li>申请<a href="https://c9.io" target="_blank" rel="external">cloud9</a>账号一个(用github的同学直接登录就可以咯)</li>
-<li>申请<a href="https://ngrok.com" target="_blank" rel="external">ngrok</a>帐号一个 (话说这个已经被墙了！那肿么办！😄先不急，往下看)</li>
-<li>添加一个开发环境（具体操作按照官网提示走就行）</li>
-<li>下载<a href="http://shadowsocks.org/en/download/clients.html" target="_blank" rel="external">shadowsocks客户端</a><br>###安装shadowsocks服务端</li>
-</ul>
-<ol>
-<li>打开cloud9的开发环境</li>
-<li>左下角terminal输入sudo passwd root(修改root密码)</li>
-<li>继续输入su root（需要使用root权限安装）</li>
-<li>apt-get update</li>
-<li>pip install shadowsocks<br>###配置并启动shadowsocks服务端</li>
-<li>在任意目录编写一个配置文件 如（/etc/shadowsocks.conf），内容如<br>下，(参数说明可参考<a href="http://www.i-ai.org/koding-shadowsocks-fuck-gfw/" target="_blank" rel="external">koding搭建shadowsocks</a>)</li>
-</ol>
-<blockquote>
-<p>{  </p>
-<blockquote>
-<p>“server”:”0.0.0.0”,<br>“server_port”:8123,<br>“password”:”password”,<br>“timeout”:500,<br>“method”:”aes-256-cfb”,<br>“fast_open”: false,<br>“workers”: 10 </p>
-</blockquote>
-<p>}</p>
-</blockquote>
-<p>2.启动shadowsocks 服务端<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nohup ssserver -c /etc/shadowsocks.conf &gt; /dev/null 2&gt;&amp;1 &amp;</span><br></pre></td></tr></table></figure></p>
-<p>###配置ngrok<br>1.在cloud9的终端下载ngrok的linux版本客户端<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip</span><br></pre></td></tr></table></figure></p>
-<p>2.解压<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">unzip ngrok-stable-linux-amd64.zip</span><br></pre></td></tr></table></figure></p>
-<p>3.配置ngrok的authtoken(下面这个是我的token，大家翻墙后自己去ngrok注册换成自己的token再运行一下就可以了)<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./ngrok authtoken 6UiE36oWtzFzAacCdmF4x_5toUszUku2GunG8NrtnF2</span><br></pre></td></tr></table></figure></p>
-<p>4.开启tcp tunnel 进行内网穿透(此处8123端口为第一步配置的shadowsocks服务端的端口)<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./ngrok tcp 8123</span><br></pre></td></tr></table></figure></p>
-<pre><code>连接后会出现一个0.tcp.ngrok.io:端口
-</code></pre><p>###配置shadowsocks客户端</p>
-<ol>
-<li>启动shadowsocks客户端，系统托盘会出现小飞机的图标</li>
-<li>右键小飞机图表，选择服务器，点击编辑服务器</li>
-<li>选择添加，将服务器端的信息填入（其中服务器ip通过 ping 0.tcp.ngrok.io获得）</li>
-<li>最后勾选启动系统代理即可<blockquote>
-<p>建议翻墙成功后更新PAC<br>###后话</p>
-<pre><code>有空的童鞋可以多申请几个，shadowsocks最新的客户端支持负载均衡～你知道的！        
-用speedtest测试了下网速，大概是这个样子的
-</code></pre><p><img src="http://ww2.sinaimg.cn/large/0060lm7Tgw1f35m5v8gyyj313e0liaed.jpg" alt="网速测试"></p>
-</blockquote>
-</li>
-</ol>
-
-          
-        
-      
-    </div>
-    
-    <div>
-      
+  <section id="posts" class="posts-collapse">
+    <div class="collection-title">
+      <h2 >
+        分享
+        <small>分类</small>
+      </h2>
     </div>
 
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
+    
       
 
-      
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
 
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
+      <h1 class="post-title">
+        
+            <a class="post-title-link" href="/2016/04/23/cloud9-ngrok-shadowsocks-fuck-gfw/" itemprop="url">
+              
+                <span itemprop="name">Cloud9配合ngrok搭建shadowsocks免费vpn实现科学上网</span>
+              
+            </a>
+        
+      </h1>
+
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated"
+              datetime="2016-04-23T11:16:11+08:00"
+              content="2016-04-23" >
+          04-23
+        </time>
+      </div>
+
+    </header>
   </article>
 
 
@@ -429,6 +301,7 @@
   </section>
 
   
+
 
 
           </div>
