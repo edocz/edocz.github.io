@@ -123,6 +123,21 @@ body a:hover {
 .recent p {
 
 }
+.recentrow {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.recentrow > div {
+  background-color: rgb(85, 85, 85);
+  color: #fff;
+  height: 240px;
+  border: 1px solid rgb(0, 0, 0);
+  /* padding: 15px; */
+}
 .pagination a,
 .pagination .current {
   outline: 0;
