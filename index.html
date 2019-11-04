@@ -20,7 +20,7 @@
     
     <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
+<body style="background-color: black;">
     <header style="height: 100vh;">
         <nav id="navbar" class="navbar fixed-top navbar-expand-lg scrolling-navbar navbar-custom navbar-dark">
             <div class="container">
@@ -70,17 +70,22 @@
 <!-- Recent container -->
 <div class="container">
     <section>
-        <div class="container">
-            <hgroup>
+        <div class="container" style="background-color: black;">
+            <hgroup class="recent">
                 <h1>RECENT</h1>
-                <p>nothing here</p>
+                <p>Nothing Here</p>
             </hgroup>
-            <div class="d-flex flex-row">
-                
+            <div class="d-flex flex-row bg-secondary .flex-*-fill">
+                <div class="p-2">Flex item 1</div>
+                <div class="p-2 bg-warning">Flex item 2</div>
+                <div class="p-2 bg-primary">Flex item 3</div>
             </div>
         </div>
     </section>
 </div>
+<footer>
+
+</footer>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>

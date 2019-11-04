@@ -108,6 +108,19 @@ body a:hover {
   line-height: 10px;
   margin-block-start: 0em;
   margin-block-end: 0em;
+}
+.recent {
+  border-bottom: #eee;
+  border-bottom-width: 0.01em;
+  border-bottom-style: solid;
+  margin-bottom: 1em;
+}
+.recent h1 {
+  font-style: italic;
+  font-weight: bold;
+  color: #fff;
+}
+.recent p {
 
 }
 .pagination a,
