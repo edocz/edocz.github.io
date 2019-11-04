@@ -138,6 +138,19 @@ body a:hover {
   border: 1px solid rgb(0, 0, 0);
   /* padding: 15px; */
 }
+.social-icons {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.social-icons > li {
+  display: inline-block;
+  margin: 0 20px 0 0;
+}
+.footer ul {
+  margin-bottom: 0;
+  padding-top: 1em;
+}
 .pagination a,
 .pagination .current {
   outline: 0;
