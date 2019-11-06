@@ -83,6 +83,7 @@ body a:hover {
     font-size: 18px;
     font-family: "SF Pro SC", "HanHei SC", "SF Pro Text", "Myriad Set Pro", "SF Pro Icons", "PingFang SC", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     font-style: italic;
+    font-weight: bold;
     padding: 0;
     border-bottom-width: 1px;
     border-bottom-color: #ffffff1e;
@@ -95,7 +96,7 @@ body a:hover {
 }
 
 .navbar a:hover {
-    background-color: rgba(0, 0, 0, 0.1);
+    /* background-color: rgba(0, 0, 0, 0.1); */
 }
 
 .navbar-custom {
@@ -128,10 +129,28 @@ body a:hover {
     }
 }
 
+.navbar-dark .navbar-nav .nav-item {
+    margin-left: 44px;
+}
+
+.navbar-dark .navbar-nav .nav-item:hover {
+    list-style-position: inside;
+    list-style: url('/assets/image/indicator_green.png');
+    list-style-type: disc;
+}
+
 .navbar-dark .navbar-nav .nav-link {
     color: rgba(255, 255, 255, .6);
-    margin-left: 44px;
     padding: 0;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+.indicator {
+    margin-right: 3px;
+    justify-content: center;
 }
 
 .title {
