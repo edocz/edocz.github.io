@@ -139,6 +139,12 @@ body a:hover {
     list-style-type: disc;
 }
 
+.navbar-dark .navbar-nav .nav-item .selected {
+    list-style-position: inside;
+    list-style: url('/assets/image/indicator_green.png');
+    list-style-type: disc;
+}
+
 .navbar-dark .navbar-nav .nav-link {
     color: rgba(255, 255, 255, .6);
     padding: 0;
@@ -246,9 +252,20 @@ body a:hover {
     margin: 0 20px 0 0;
 }
 
+.footer {
+    margin-top: 40px;
+    padding: 28px;
+    border-top-color: rgba(255, 255, 255, .12);
+    border-top-width: 1px;
+    border-top-style: solid;
+}
+
+.footer nav {
+    justify-content: center;
+}
+
 .footer ul {
     margin-bottom: 0;
-    padding-top: 1em;
 }
 
 .pagination a,
@@ -274,16 +291,30 @@ body a:hover {
 .scroll-down-bar {
     position: absolute;
     width: 100%;
-    font-size: 2rem;
-    height: 8rem;
+    height: 72px;
     text-align: center;
     cursor: pointer;
     bottom: 0;
 }
 
+.scroll-down-mouse {
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    color: #fff;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-animation: scroll-shine 1.5s infinite;
+    animation: scroll-shine 1.5s infinite;
+}
+
 .scroll-down-arrow {
     position: absolute;
-    padding-top: 2rem;
+    padding-bottom: 20px;
+    margin-left: 4px;
     color: #fff;
     -webkit-transform: translateZ(0);
     -moz-transform: translateZ(0);
@@ -449,63 +480,111 @@ body a:hover {
     display: none;
 }
 
-@-moz-keyframes scroll-down {
+@-moz-keyframes scroll-shine {
     0% {
         opacity: 0.8;
-        top: 0;
     }
     50% {
         opacity: 0.4;
-        top: -1em;
     }
     100% {
         opacity: 0.8;
-        top: 0;
+    }
+}
+
+@-webkit-keyframes scroll-shine {
+    0% {
+        opacity: 0.8;
+    }
+    50% {
+        opacity: 0.4;
+    }
+    100% {
+        opacity: 0.8;
+    }
+}
+
+@-o-keyframes scroll-shine {
+    0% {
+        opacity: 0.8;
+    }
+    50% {
+        opacity: 0.4;
+    }
+    100% {
+        opacity: 0.8;
+    }
+}
+
+@keyframes scroll-shine {
+    0% {
+        opacity: 0.8;
+    }
+    50% {
+        opacity: 0.4;
+    }
+    100% {
+        opacity: 0.8;
+    }
+}
+
+@-moz-keyframes scroll-down {
+    0% {
+        opacity: 0.8;
+        bottom: 0;
+    }
+    50% {
+        opacity: 0.4;
+        bottom: -1em;
+    }
+    100% {
+        opacity: 0.8;
+        bottom: 0;
     }
 }
 
 @-webkit-keyframes scroll-down {
     0% {
         opacity: 0.8;
-        top: 0;
+        bottom: 0;
     }
     50% {
         opacity: 0.4;
-        top: -1em;
+        bottom: -1em;
     }
     100% {
         opacity: 0.8;
-        top: 0;
+        bottom: 0;
     }
 }
 
 @-o-keyframes scroll-down {
     0% {
         opacity: 0.8;
-        top: 0;
+        bottom: 0;
     }
     50% {
         opacity: 0.4;
-        top: -1em;
+        bottom: -1em;
     }
     100% {
         opacity: 0.8;
-        top: 0;
+        bottom: 0;
     }
 }
 
 @keyframes scroll-down {
     0% {
         opacity: 0.8;
-        top: 0;
+        bottom: 0;
     }
     50% {
         opacity: 0.4;
-        top: -1em;
+        bottom: -1em;
     }
     100% {
         opacity: 0.8;
-        top: 0;
+        bottom: 0;
     }
 }
 
