@@ -535,7 +535,7 @@ body a:hover {
     }
     50% {
         opacity: 0.4;
-        bottom: -1em;
+        bottom: -.3em;
     }
     100% {
         opacity: 0.8;
@@ -550,7 +550,7 @@ body a:hover {
     }
     50% {
         opacity: 0.4;
-        bottom: -1em;
+        bottom: -.3em;
     }
     100% {
         opacity: 0.8;
@@ -565,7 +565,7 @@ body a:hover {
     }
     50% {
         opacity: 0.4;
-        bottom: -1em;
+        bottom: -.3em;
     }
     100% {
         opacity: 0.8;
@@ -580,7 +580,7 @@ body a:hover {
     }
     50% {
         opacity: 0.4;
-        bottom: -1em;
+        bottom: -.3em;
     }
     100% {
         opacity: 0.8;
@@ -889,6 +889,7 @@ figure {
 }
 
 .fog__img--first {
+    opacity: 0.3;
     background: url("/assets/image/fog-1.png") repeat-x;
     background-size: contain;
     background-position: center;
@@ -897,6 +898,7 @@ figure {
 }
 
 .fog__img--second {
+    opacity: 0.1;
     background: url("/assets/image/fog-2.png") repeat-x;
     background-size: contain;
     background-position: center;
