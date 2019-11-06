@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <link rel="apple-touch-icon" sizes="76x76" href="/site-img/apple-touch-icon.png">
@@ -10,29 +11,26 @@
     <meta name="author" content="Pandorawing">
     <meta name="keywords" content="Pandorawing,blog,UI,UE,UX,3D">
     <title>Blog</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fluid-dev/hexo-theme-fluid@1.5.0/source/lib/font-awesome/css/all.min.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fluid-dev/hexo-theme-fluid@1.5.0/source/lib/font-awesome/css/all.min.css"> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fluid-dev/hexo-theme-fluid@1.5.0/source/lib/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fluid-dev/hexo-theme-fluid@1.5.0/source/lib/mdbootstrap/css/mdb.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fluid-dev/hexo-theme-fluid@1.5.0/source/lib/github-markdown/github-markdown.min.css">
-    <link rel="stylesheet" href="https://at.alicdn.com/t/font_1067060_qzomjdt8bmp.css">
-    
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fluid-dev/hexo-theme-fluid@1.5.0/source/lib/prettify/tomorrow-night-eighties.min.css">
-    
-    <link rel="stylesheet" href="css/main.css?v=20191104">
+    <!-- <link rel="stylesheet" href="/assets/css/mdb.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fluid-dev/hexo-theme-fluid@1.5.0/source/lib/github-markdown/github-markdown.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fluid-dev/hexo-theme-fluid@1.5.0/source/lib/prettify/tomorrow-night-eighties.min.css"> -->
+    <link rel="stylesheet" href="assets/css/font.css?v=201911061">
+    <link rel="stylesheet" href="assets/css/main.css?v=20191105">
 </head>
-<body style="background-color: black;">
-    <header style="height: 100vh;">
+
+<body style="background: url('assets/image/cover_home.jpg')no-repeat center center;
+background-size: cover;background-color: black;">
+    <header style="height: 120vh;">
         <nav id="navbar" class="navbar fixed-top navbar-expand-lg scrolling-navbar navbar-custom navbar-dark">
             <div class="container">
-                <a class="" href="/">
-                    <strong class="title">Link's</strong>
-                    <p class="subtitle">PERSONAL HUT</p>
-                </a>
-            
+                <a class="" href="/"><img src="/assets/image/logo.png" alt="" srcset=""></a>
+
                 <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <div class="animated-icon"><span></span><span></span></div>
+                    <div class="animated-icon"><span></span><span></span><span></span></div>
                 </button>
-            
+
                 <!-- Collapsible content -->
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto text-center">
@@ -52,8 +50,8 @@
                 </div>
             </div>
         </nav>
-    
-        <div class="view intro-2" style="background: url('http://p0.ifengimg.com/pmop/2017/0118/22856CCC7B89562DFBB7AA77872C921ED5207FE1_size61_w1063_h752.jpeg')no-repeat center center;
+
+        <!-- <div class="view intro-2" style="background: url('assets/image/cover_home.jpg')no-repeat center center;
                background-size: cover;">
             <div class="full-bg-img">
                 <div class="mask rgba-black-light flex-center">
@@ -65,52 +63,53 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
     </header>
-<!-- Recent container -->
-<div class="container">
-    <section>
-        <div class="container" style="background-color: black;">
-            <hgroup class="recent">
-                <h1>RECENT</h1>
-                <p>Nothing Here</p>
-            </hgroup>
-            <div class="container">
-            
-                <div class="recentrow">
-                    <div class="col-4 col-sm">.col-4</div>
-                    <div class="col-4 col-sm">.col-4</div>
-                    <div class="col-4 col-sm">.col-4</div>
+    <!-- Recent container -->
+    <div class="container">
+        <section>
+            <div class="container" style="background-color: black;">
+                <hgroup class="recent">
+                    <h1>RECENT</h1>
+                    <p>Nothing Here</p>
+                </hgroup>
+                <div class="container">
+
+                    <div class="recentrow">
+                        <div class="col-4 col-sm">.col-4</div>
+                        <div class="col-4 col-sm">.col-4</div>
+                        <div class="col-4 col-sm">.col-4</div>
+                    </div>
+                    <div class="recentrow">
+                        <div class="col-12 col-sm">.col-12</div>
+                    </div>
+                    <div class="recentrow">
+                        <div class="col-6 col-sm">.col-6</div>
+                        <div class="col-6 col-sm">.col-6</div>
+                    </div>
+                    <div class="recentrow">
+                        <div class="col-8 col-sm">.col-8</div>
+                        <div class="col-2 col-sm">.col-2</div>
+                        <div class="col-2 col-sm">.col-2</div>
+                    </div>
+
                 </div>
-                <div class="recentrow">
-                    <div class="col-12 col-sm">.col-12</div>
-                </div>
-                <div class="recentrow">
-                    <div class="col-6 col-sm">.col-6</div>
-                    <div class="col-6 col-sm">.col-6</div>
-                </div>
-                <div class="recentrow">
-                    <div class="col-8 col-sm">.col-8</div>
-                    <div class="col-2 col-sm">.col-2</div>
-                    <div class="col-2 col-sm">.col-2</div>
-                </div>
-            
             </div>
-        </div>
-    </section>
-</div>
-<footer style="margin-top: 1em;padding-top: 1em;">
-    <nav class="d-flex footer" style="justify-content: center;border-top-color: white;border-top-width: .01em;border-top-style: solid;">
-        <ul class="social-icons">
-            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-            <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
-        </ul>
-    </nav>>
-</footer>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        </section>
+    </div>
+    <footer style="margin-top: 1em;padding-top: 1em;">
+        <nav class="d-flex footer" style="justify-content: center;border-top-color: white;border-top-width: .01em;border-top-style: solid;">
+            <ul class="social-icons">
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+            </ul>
+        </nav>>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
+
 </html>
