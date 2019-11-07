@@ -338,8 +338,9 @@ body a:hover {
 }
 
 #scroll-top-button {
+    opacity: .8;
     position: fixed;
-    background: #fff;
+    background: transparent;
     border-radius: 4px;
     width: 40px;
     height: 40px;
@@ -353,6 +354,10 @@ body a:hover {
     display: flex;
     display: -webkit-flex;
     align-items: center;
+}
+
+#scroll-top-button:hover {
+    opacity: 1;
 }
 
 #scroll-top-button i {
