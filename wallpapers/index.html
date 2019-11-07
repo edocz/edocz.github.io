@@ -115,28 +115,7 @@
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0/dist/smooth-scroll.polyfills.min.js"></script>
     <script src="/assets/js/jquery.bootstrap-autohidingnavbar.min.js"></script>
     <script src="/assets/js/isotope.pkgd.min.js"></script>
-    <script>
-        var scroll = new SmoothScroll();
-        var anchorNavbar = document.querySelector('#navbar');
-
-        $('#scroll-top-button').click(function() {
-            scroll.animateScroll(anchorNavbar);
-        });
-
-        $("#navbar").autoHidingNavbar({
-            showOnBottom: false,
-            showOnUpscroll: false,
-            animationDuration: 300
-        });
-
-        window.onscroll = function() {
-            if ((document.documentElement.clientHeight + 10) < document.documentElement.scrollTop) {
-                $('#scroll-top-button').show();
-            } else {
-                $('#scroll-top-button').hide();
-            }
-        }
-    </script>
+    <script src="/assets/js/main.js"></script>
 </body>
 
 </html>

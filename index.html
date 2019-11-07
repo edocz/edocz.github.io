@@ -16,8 +16,8 @@
     <!-- <link rel="stylesheet" href="/assets/css/mdb.min.css"> -->
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fluid-dev/hexo-theme-fluid@1.5.0/source/lib/github-markdown/github-markdown.min.css"> -->
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fluid-dev/hexo-theme-fluid@1.5.0/source/lib/prettify/tomorrow-night-eighties.min.css"> -->
-    <link rel="stylesheet" href="/assets/css/font.css?v=201911062">
-    <link rel="stylesheet" href="/assets/css/main.css?v=201911071">
+    <link rel="stylesheet" href="/assets/css/font.css?v=201911071">
+    <link rel="stylesheet" href="/assets/css/main.css?v=201911072">
 </head>
 
 <body style="background: url('https://s2.ax1x.com/2019/11/07/MF8Na6.jpg')no-repeat center center;background-size: cover;background-color: #0a0a0a;">
@@ -114,33 +114,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0/dist/smooth-scroll.polyfills.min.js"></script>
     <script src="/assets/js/jquery.bootstrap-autohidingnavbar.min.js"></script>
-    <script>
-        var scroll = new SmoothScroll();
-        var anchorRecent = document.querySelector('#recent');
-        var anchorNavbar = document.querySelector('#navbar');
-
-        $('.scroll-down-bar>ul').click(function() {
-            scroll.animateScroll(anchorRecent);
-        });
-
-        $('#scroll-top-button').click(function() {
-            scroll.animateScroll(anchorNavbar);
-        });
-
-        $("#navbar").autoHidingNavbar({
-            showOnBottom: false,
-            showOnUpscroll: false,
-            animationDuration: 300
-        });
-
-        window.onscroll = function() {
-            if ((document.documentElement.clientHeight + 10) < document.documentElement.scrollTop) {
-                $('#scroll-top-button').show();
-            } else {
-                $('#scroll-top-button').hide();
-            }
-        }
-    </script>
+    <script src="/assets/js/main.js"></script>
 </body>
 
 </html>
