@@ -487,8 +487,6 @@ body a:hover {
     position: fixed;
     background: transparent;
     border-radius: 4px;
-    width: 40px;
-    height: 40px;
     bottom: -60px;
     -webkit-transform: translateZ(0);
     -moz-transform: translateZ(0);
