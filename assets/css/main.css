@@ -275,6 +275,32 @@ body a:hover {
     height: 100%;
 }
 
+.worksrow .worksitem .img .mask {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .10);
+    text-align: center;
+    display: none;
+}
+
+.worksrow .worksitem .img .mask>div {
+    width: 100%;
+    height: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.worksrow .worksitem .img .mask>div>span {
+    font-size: 14px;
+    vertical-align: middle;
+    color: rgba(255, 255, 255, 1);
+    font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
 .worksrow .worksitem-blank {
     width: 190px;
     height: 160px;
