@@ -242,6 +242,35 @@ body a:hover {
     background-color: rgba(255, 255, 255, .1);
 }
 
+.portfolio-filter {
+    padding: 0;
+    margin-bottom: 50px;
+    padding-bottom: 32px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(255, 255, 255, .12);
+}
+
+.portfolio-filter button {
+    outline: none;
+    width: 150px;
+    height: 54px;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, .60);
+    transform: .3s all;
+}
+
+.portfolio-filter button:hover {
+    border: 1px solid rgba(255, 255, 255, 1);
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, .1);
+}
+
 .summaryrow {
     justify-content: center;
     display: -ms-flexbox;
@@ -343,34 +372,6 @@ body a:hover {
     transform: translateZ(0);
     -webkit-animation: scroll-down 1.5s infinite;
     animation: scroll-down 1.5s infinite;
-}
-
-.portfolio-filter {
-    padding: 0;
-    margin-bottom: 50px;
-    padding-bottom: 32px;
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-    border-bottom-color: rgba(255, 255, 255, .12);
-}
-
-.portfolio-filter button {
-    outline: none;
-    width: 150px;
-    height: 54px;
-    background: transparent;
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    display: inline-block;
-    margin-right: 20px;
-    font-size: 16px;
-    font-weight: bold;
-    color: rgba(255, 255, 255, .60);
-    transform: .3s all;
-}
-
-.portfolio-filter button:hover {
-    border: 1px solid rgba(255, 255, 255, 1);
-    color: rgba(255, 255, 255, 1);
 }
 
 #scroll-top-button {
