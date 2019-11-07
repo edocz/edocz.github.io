@@ -865,7 +865,7 @@ figure {
 }
 
 .fog {
-    height: 100vh;
+    height: 120vh;
     width: 100%;
 }
 
@@ -883,7 +883,7 @@ figure {
 }
 
 .fog__img--first {
-    opacity: 0.3;
+    opacity: 0.1;
     background: url("/assets/image/fog-1.png") repeat-x;
     background-size: contain;
     background-position: center;

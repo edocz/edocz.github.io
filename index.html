@@ -17,7 +17,7 @@
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fluid-dev/hexo-theme-fluid@1.5.0/source/lib/github-markdown/github-markdown.min.css"> -->
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fluid-dev/hexo-theme-fluid@1.5.0/source/lib/prettify/tomorrow-night-eighties.min.css"> -->
     <link rel="stylesheet" href="assets/css/font.css?v=201911062">
-    <link rel="stylesheet" href="assets/css/main.css?v=201911058">
+    <link rel="stylesheet" href="assets/css/main.css?v=201911059">
 </head>
 
 <body style="background: url('https://s2.ax1x.com/2019/11/07/MF8Na6.jpg')no-repeat center center;background-size: cover;background-color: #0a0a0a;">
@@ -61,8 +61,8 @@
                         </ul>
                     </div>
                 </div>
-                <!-- <div class="fog__img fog__img--first"></div>
-                <div class="fog__img fog__img--second"></div> -->
+                <div class="fog__img fog__img--first"></div>
+                <div class="fog__img fog__img--second"></div>
             </div>
         </div>
     </header>
@@ -112,13 +112,10 @@
     <script src="/assets/js/jquery.bootstrap-autohidingnavbar.min.js"></script>
     <script>
         $("#navbar").autoHidingNavbar({
-            // see next for specifications
+            showOnBottom: false,
+            showOnUpscroll: false,
+            animationDuration: 300
         });
-        // $('.waves-light').hover(function() {
-        //     $(this).find('img').attr('src', '/assets/image/indicator_green.png');
-        // }, function() {
-        //     $(this).find('img').attr('src', '');
-        // })
     </script>
 </body>
 
