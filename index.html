@@ -52,6 +52,8 @@
 
         <div class="view intro-2">
             <div class="full-bg-img fog__container">
+                <div class="fog__img fog__img--first"></div>
+                <div class="fog__img fog__img--second"></div>
                 <div class="mask rgba-black-light flex-center">
                     <div class="scroll-down-bar" style="flex-direction: column">
                         <ul style="list-style: none;text-align: center;">
@@ -61,14 +63,12 @@
                         </ul>
                     </div>
                 </div>
-                <div class="fog__img fog__img--first"></div>
-                <div class="fog__img fog__img--second"></div>
             </div>
         </div>
     </header>
     <!-- Recent container -->
     <div class="container">
-        <section>
+        <section id="recent">
             <div class="container">
                 <hgroup class="recenthead">
                     <h1>RECENT</h1>
@@ -109,12 +109,21 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0/dist/smooth-scroll.polyfills.min.js"></script>
     <script src="/assets/js/jquery.bootstrap-autohidingnavbar.min.js"></script>
     <script>
+        var scroll = new SmoothScroll();
+        var anchor = document.querySelector('#recent');
+
         $("#navbar").autoHidingNavbar({
             showOnBottom: false,
             showOnUpscroll: false,
             animationDuration: 300
+        });
+
+        $('.scroll-down-bar>ul').click(function() {
+
+            scroll.animateScroll(anchor);
         });
     </script>
 </body>
