@@ -137,6 +137,12 @@ body a:hover {
     margin-left: 44px;
 }
 
+.navbar-dark .navbar-nav .nav-item-disable {
+    margin-left: 44px;
+}
+
+.navbar-dark .navbar-nav .nav-item-disable:hover {}
+
 .navbar-dark .navbar-nav .nav-item:hover {
     list-style-position: inside;
     list-style: url('/assets/image/indicator_green.png');
@@ -152,6 +158,16 @@ body a:hover {
 .navbar-dark .navbar-nav .nav-link {
     color: rgba(255, 255, 255, .6);
     padding: 0;
+}
+
+.navbar-dark .navbar-nav .nav-link-disable {
+    color: rgba(255, 255, 255, .6);
+    padding: 0;
+    cursor: default;
+}
+
+.navbar-dark .navbar-nav .nav-link-disable:hover {
+    text-decoration: none;
 }
 
 .navbar-dark .navbar-nav .nav-link:hover {
