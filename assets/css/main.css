@@ -154,26 +154,6 @@ body a:hover {
     color: rgba(255, 255, 255, 1);
 }
 
-.indicator {
-    margin-right: 3px;
-    justify-content: center;
-}
-
-.title {
-    color: #fff;
-    font-size: 25px;
-    font-weight: bold;
-}
-
-.subtitle {
-    color: rgb(112, 112, 112);
-    font-size: 8px;
-    font-style: normal;
-    line-height: 10px;
-    margin-block-start: 0em;
-    margin-block-end: 0em;
-}
-
 .recenthead {
     margin-bottom: 40px;
     padding-bottom: 32px;
