@@ -118,11 +118,6 @@
         var scroll = new SmoothScroll();
         var anchorRecent = document.querySelector('#recent');
         var anchorNavbar = document.querySelector('#navbar');
-        $("#navbar").autoHidingNavbar({
-            showOnBottom: false,
-            showOnUpscroll: false,
-            animationDuration: 300
-        });
 
         $('.scroll-down-bar>ul').click(function() {
             scroll.animateScroll(anchorRecent);
@@ -130,6 +125,12 @@
 
         $('#scroll-top-button').click(function() {
             scroll.animateScroll(anchorNavbar);
+        });
+
+        $("#navbar").autoHidingNavbar({
+            showOnBottom: false,
+            showOnUpscroll: false,
+            animationDuration: 300
         });
 
         window.onscroll = function() {

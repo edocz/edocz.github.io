@@ -137,6 +137,9 @@
             <!-- </div> -->
         </section>
     </div>
+
+    <img class="z-depth-1" id="scroll-top-button" src="/assets/image/backtop_hover.png" style="cursor: pointer;display:none; bottom: 100px; right: 100px;">
+
     <footer class="footer">
         <nav class="d-flex">
             <ul class="social-icons">
@@ -154,6 +157,19 @@
     <script src="/assets/js/jquery.bootstrap-autohidingnavbar.min.js"></script>
     <script src="/assets/js/isotope.pkgd.min.js"></script>
     <script>
+        var scroll = new SmoothScroll();
+        var anchorNavbar = document.querySelector('#navbar');
+
+        $('#scroll-top-button').click(function() {
+            scroll.animateScroll(anchorNavbar);
+        });
+
+        $("#navbar").autoHidingNavbar({
+            showOnBottom: false,
+            showOnUpscroll: false,
+            animationDuration: 300
+        });
+
         var $grid = $('.works-container').isotope({
             itemSelector: '.worksitem',
             layoutMode: 'fitRows'
@@ -164,7 +180,16 @@
             $grid.isotope({
                 filter: filterValue
             });
-        })
+        });
+
+        window.onscroll = function() {
+            console.log(document.documentElement.clientHeight, document.documentElement.scrollTop);
+            if ((document.documentElement.clientHeight + 10) < document.documentElement.scrollTop) {
+                $('#scroll-top-button').show();
+            } else {
+                $('#scroll-top-button').hide();
+            }
+        }
     </script>
 </body>
 
