@@ -345,11 +345,13 @@ body a:hover {
     width: 40px;
     height: 40px;
     bottom: -60px;
-    -webkit-transition: bottom 0.3s ease;
-    -moz-transform: bottom 0.3s ease;
-    -ms-transform: bottom 0.3s ease;
-    -o-transform: bottom 0.3s ease;
-    transition: bottom 0.3s ease;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-animation: scroll-shine 1.5s infinite;
+    animation: scroll-shine 1.5s infinite;
     outline: none;
     display: flex;
     display: -webkit-flex;
