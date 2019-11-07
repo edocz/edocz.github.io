@@ -60,7 +60,7 @@
             </hgroup>
 
             <div class="portfolio-filter">
-                <button type="button" class="selector" data-filter="*">
+                <button type="button" class="selector selected" data-filter="*">
                     ALL
                 </button>
                 <button type="button" class="selector" data-filter=".worksitem[data-category='animation']">
@@ -176,6 +176,8 @@
         });
 
         $('.selector').on('click', function() {
+            $('.selector').removeClass('selected');
+            $(this).addClass('selected');
             var filterValue = $(this).attr('data-filter');
             $grid.isotope({
                 filter: filterValue
@@ -183,7 +185,6 @@
         });
 
         window.onscroll = function() {
-            console.log(document.documentElement.clientHeight, document.documentElement.scrollTop);
             if ((document.documentElement.clientHeight + 10) < document.documentElement.scrollTop) {
                 $('#scroll-top-button').show();
             } else {
