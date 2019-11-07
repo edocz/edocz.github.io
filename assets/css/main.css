@@ -370,10 +370,9 @@ body a:hover {
 }
 
 .wallpapersrow .wallpapersitem .wallpapers-footer .wallpapers-button:hover {
-    border: 1px solid rgba(255, 255, 255, 1);
+    border: 1px solid rgba(255, 255, 255, .60);
     color: rgba(255, 255, 255, 1);
-    background-color: rgba(255, 255, 255, .1);
-    font-weight: bold;
+    background-color: rgba(255, 255, 255, .20);
 }
 
 .storyhead {
