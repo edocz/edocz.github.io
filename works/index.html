@@ -1,192 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <link rel="apple-touch-icon" sizes="76x76" href="/site-img/apple-touch-icon.png">
-    <link rel="icon" type="image/png" href="/site-img/favicon.png">
+    <link rel="icon" type="image/png" href="/assets/image/favicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="description" content="作品展示">
-    <meta name="author" content="Pandorawing">
-    <meta name="keywords" content="Pandorawing,blog,UI,UE,UX,3D">
-    <title>Blog</title>
+    <meta name="description" content="绘画,设计,3D,作品">
+    <meta name="author" content="pandorawing">
+    <meta name="keywords" content="pandorawing,link,blog,UI,UE,UX,C4D,3D,hand drawn,illustration,anime,design">
+    <title>Link's Works</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fluid-dev/hexo-theme-fluid@1.5.0/source/lib/font-awesome/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fluid-dev/hexo-theme-fluid@1.5.0/source/lib/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fluid-dev/hexo-theme-fluid@1.5.0/source/lib/mdbootstrap/css/mdb.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fluid-dev/hexo-theme-fluid@1.5.0/source/lib/github-markdown/github-markdown.min.css">
-    <link rel="stylesheet" href="https://at.alicdn.com/t/font_1067060_qzomjdt8bmp.css">
-    
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fluid-dev/hexo-theme-fluid@1.5.0/source/lib/prettify/tomorrow-night-eighties.min.css">
-    
-    <link rel="stylesheet" href="../css/main.css?v=20191104">
+    <!-- <link rel="stylesheet" href="/assets/css/mdb.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fluid-dev/hexo-theme-fluid@1.5.0/source/lib/github-markdown/github-markdown.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fluid-dev/hexo-theme-fluid@1.5.0/source/lib/prettify/tomorrow-night-eighties.min.css"> -->
+    <link rel="stylesheet" href="/assets/css/font.css?v=201911062">
+    <link rel="stylesheet" href="/assets/css/main.css?v=201911071">
 </head>
-<body style="background-color: black;">
-    <header style="height: 35vh;">
+
+<body style="background: url('https://s2.ax1x.com/2019/11/07/MF5cgU.jpg')no-repeat center center;background-size: cover;background-color: #0a0a0a;">
+    <header style="height:80px;margin-bottom: 280px;">
         <nav id="navbar" class="navbar fixed-top navbar-expand-lg scrolling-navbar navbar-custom navbar-dark">
             <div class="container">
-                <a class="" href="/">
-                    <strong class="title">Link's</strong>
-                    <p class="subtitle">PERSONAL HUT</p>
-                </a>
-            
+                <a class="" href="/"><img src="/assets/image/logo.png" alt="" srcset=""></a>
+
                 <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <div class="animated-icon"><span></span><span></span></div>
+                    <div class="animated-icon"><span></span><span></span><span></span></div>
                 </button>
-            
+
                 <!-- Collapsible content -->
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto text-center">
-                        <li class="nav-item">
-                            <a class="nav-link waves-effect waves-light" href="/works/">WORKS</a>
+                        <li class="nav-item selected">
+                            <a class="nav-link waves-effect waves-light" href="/works/"><img class="indicator"></img>WORKS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link waves-effect waves-light" href="/summary/">SUMMARY</a>
+                            <a class="nav-link waves-effect waves-light" href="/wallpapers/"><img class="indicator"></img>WALLPAPERS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link waves-effect waves-light" href="/resources/">RESOURCES</a>
+                            <a class="nav-link waves-effect waves-light" href="/resources/"><img class="indicator"></img>RESOURCES</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link waves-effect waves-light" href="/story/">STORY</a>
+                            <a class="nav-link waves-effect waves-light" href="/story/"><img class="indicator"></img>STORY</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
-    
-        <div class="view intro-2" style="background: url('http://p0.ifengimg.com/pmop/2017/0118/22856CCC7B89562DFBB7AA77872C921ED5207FE1_size61_w1063_h752.jpeg')no-repeat center center;
-               background-size: cover;">
-            
-        </div>
     </header>
-<!-- Recent container -->
-<div class="container">
-    <section>
-        <!-- <div class="container" style="background-color: black;"> -->
-            <hgroup class="works">
+    <!-- Works container -->
+    <div class="container">
+        <section id="works">
+            <!-- <div class="container" style="background-color: black;"> -->
+            <hgroup class="workshead">
                 <h1>WORKS</h1>
                 <p>Nothing Here</p>
             </hgroup>
-           
+
             <div class="portfolio-filter">
                 <button type="button" class="selector" data-filter="*">
                     ALL
                 </button>
-                <button type="button" class="selector" data-filter="*">
+                <button type="button" class="selector" data-filter=".worksitem[data-category='animation']">
                     3D
                 </button>
-                <button type="button" class="selector" data-filter="*">
+                <button type="button" class="selector" data-filter=".worksitem[data-category='uiue']">
                     UI/UE
                 </button>
-                <button type="button" class="selector" data-filter="*">
+                <button type="button" class="selector" data-filter=".worksitem[data-category='illustration']">
                     Illustration
                 </button>
-                <button type="button" class="selector" data-filter="*">
+                <button type="button" class="selector" data-filter=".worksitem[data-category='animation']">
                     Animation
                 </button>
-                <button type="button" class="selector" data-filter="*">
+                <button type="button" class="selector" data-filter=".worksitem[data-category='webdesign']">
                     Web Design
                 </button>
             </div>
 
-            <div class="container">
-                <div class="worksrow works-container">
-                    <div class="col-lg-2" data-category="design"></div>
-                    <div class="col-lg-2" data-category="design"></div>
-                    <div class="col-lg-2" data-category="design"></div>
-                    <div class="col-lg-2" data-category="design"></div>
-                    <div class="col-lg-2" data-category="design"></div>
-                    <div class="col-lg-2" data-category="design"></div>
-                    <div class="col-lg-2" data-category="design"></div>
-                    <div class="col-lg-2" data-category="design"></div>
-                    <div class="col-lg-2" data-category="design"></div>
-                    <div class="col-lg-2" data-category="design"></div>
-                    <div class="col-lg-2" data-category="design"></div>
-                    <div class="col-lg-2" data-category="design"></div>
-                    <div class="col-lg-2" data-category="design"></div>
-                    <div class="col-lg-2" data-category="design"></div>
-                    <div class="col-lg-2" data-category="design"></div>
-                    <div class="col-lg-2" data-category="design"></div>
-                    <div class="col-lg-2" data-category="design"></div>
-                    <div class="col-lg-2" data-category="design"></div>
-                    <div class="col-lg-2" data-category="design"></div>
-                    <div class="col-lg-2" data-category="design"></div>
-                    <div class="col-lg-2" data-category="design"></div>
-                    <div class="col-lg-2" data-category="design"></div>
-                    <div class="col-lg-2" data-category="design"></div>
-                    <div class="col-lg-2" data-category="design"></div>
-                    <div class="col-lg-2" data-category="design"></div>
-                    <div class="col-lg-2" data-category="design"></div>
-                    <div class="col-lg-2" data-category="design"></div>
-                    <div class="col-lg-2" data-category="design"></div>
-                    <div class="col-lg-2" data-category="design"></div>
-                    <div class="col-lg-2" data-category="design"></div>
-                    <div class="col-lg-2" data-category="design"></div>
-                    <div class="col-lg-2" data-category="design"></div>
-                    <div class="col-lg-2" data-category="design"></div>
-                    <div class="col-lg-2" data-category="design"></div>
-                    <div class="col-lg-2" data-category="design"></div>
-                    <div class="col-lg-2" data-category="design"></div>
-                    <div class="col-lg-2" data-category="design"></div>
-                    <div class="col-lg-2" data-category="design"></div>
-                    <div class="col-lg-2" data-category="design"></div>
-                    <div class="col-lg-2" data-category="design"></div>
-                    <div class="col-lg-2" data-category="design"></div>
-                    <div class="col-lg-2" data-category="design"></div>
-                    <div class="col-lg-2" data-category="design"></div>
-                    <div class="col-lg-2" data-category="design"></div>
-                    <div class="col-lg-2" data-category="design"></div>
-                    <div class="col-lg-2" data-category="design"></div>
-                    <div class="col-lg-2" data-category="design"></div>
-                    <div class="col-lg-2" data-category="design"></div>
-                    <div class="col-lg-2" data-category="design"></div>
-                    <div class="col-lg-2" data-category="design"></div>
-                    <div class="col-lg-2" data-category="design"></div>
-                    <div class="col-lg-2" data-category="design"></div>
-                    <div class="col-lg-2" data-category="design"></div>
-                    <div class="col-lg-2" data-category="design"></div>
-                    <div class="col-lg-2" data-category="design"></div>
-                    <div class="col-lg-2" data-category="design"></div>
-                    <div class="col-lg-2" data-category="design"></div>
-                    <div class="col-lg-2" data-category="design"></div>
-                    <div class="col-lg-2" data-category="design"></div>
-                    <div class="col-lg-2" data-category="design"></div>
-                    <div class="col-lg-2" data-category="design"></div>
-                    <div class="col-lg-2" data-category="design"></div>
-                    <div class="col-lg-2" data-category="design"></div>
-                    <div class="col-lg-2" data-category="design"></div>
-                    <div class="col-lg-2" data-category="design"></div>
-                    <div class="col-lg-2" data-category="design"></div>
-                    <div class="col-lg-2" data-category="design"></div>
-                    <div class="col-lg-2" data-category="design"></div>
-                    <div class="col-lg-2" data-category="design"></div>
-                    <div class="col-lg-2" data-category="design"></div>
-                    <div class="col-lg-2" data-category="design"></div>
-                    <div class="col-lg-2" data-category="design"></div>
-                    <div class="col-lg-2" data-category="design"></div>
-                    <div class="col-lg-2" data-category="design"></div>
-                    <div class="col-lg-2" data-category="design"></div>
-                    <div class="col-lg-2" data-category="design"></div>
-                    <div class="col-lg-2" data-category="design"></div>
-                    <div class="col-lg-2" data-category="design"></div>
-                    <div class="col-lg-2" data-category="design"></div>
-                    <div class="col-lg-2" data-category="design"></div>
-                </div>
+
+            <div class="worksrow works-container">
+                <div class="worksitem" data-category="animation"></div>
+                <div class="worksitem" data-category="animation"></div>
+                <div class="worksitem" data-category="animation"></div>
+                <div class="worksitem" data-category="webdesign"></div>
+                <div class="worksitem" data-category="webdesign"></div>
+                <div class="worksitem" data-category="webdesign"></div>
+                <div class="worksitem" data-category="webdesign"></div>
+                <div class="worksitem" data-category="webdesign"></div>
+                <div class="worksitem" data-category="illustration"></div>
+                <div class="worksitem" data-category="illustration"></div>
+                <div class="worksitem" data-category="illustration"></div>
+                <div class="worksitem" data-category="illustration"></div>
+                <div class="worksitem" data-category="illustration"></div>
+                <div class="worksitem" data-category="animation"></div>
+                <div class="worksitem" data-category="animation"></div>
+                <div class="worksitem" data-category="animation"></div>
+                <div class="worksitem" data-category="animation"></div>
+                <div class="worksitem" data-category="animation"></div>
+                <div class="worksitem" data-category="animation"></div>
+                <div class="worksitem" data-category="uiue"></div>
+                <div class="worksitem" data-category="uiue"></div>
+                <div class="worksitem" data-category="uiue"></div>
+                <div class="worksitem" data-category="uiue"></div>
+                <div class="worksitem" data-category="uiue"></div>
+                <div class="worksitem" data-category="uiue"></div>
+                <div class="worksitem" data-category="3d"></div>
+                <div class="worksitem" data-category="3d"></div>
+                <div class="worksitem" data-category="3d"></div>
+                <div class="worksitem" data-category="3d"></div>
+                <div class="worksitem" data-category="3d"></div>
+                <div class="worksitem" data-category="3d"></div>
+                <div class="worksitem" data-category="webdesign"></div>
+                <div class="worksitem" data-category="webdesign"></div>
+                <div class="worksitem" data-category="webdesign"></div>
+                <div class="worksitem" data-category="webdesign"></div>
+                <div class="worksitem" data-category="webdesign"></div>
+                <div class="worksitem" data-category="webdesign"></div>
+                <div class="worksitem" data-category="webdesign"></div>
+                <div class="worksitem" data-category="webdesign"></div>
+                <div class="worksitem" data-category="webdesign"></div>
+                <div class="worksitem" data-category="webdesign"></div>
+                <div class="worksitem" data-category="webdesign"></div>
+                <div class="worksitem" data-category="webdesign"></div>
+                <div class="worksitem" data-category="webdesign"></div>
+                <div class="worksitem" data-category="webdesign"></div>
+                <div class="worksitem" data-category="webdesign"></div>
+                <div class="worksitem" data-category="webdesign"></div>
+                <div class="worksitem" data-category="webdesign"></div>
+                <div class="worksitem" data-category="webdesign"></div>
+                <div class="worksitem" data-category="webdesign"></div>
             </div>
-        <!-- </div> -->
-    </section>
-</div>
-<footer style="margin-top: 1em;padding-top: 1em;">
-    <nav class="d-flex footer" style="justify-content: center;border-top-color: white;border-top-width: .01em;border-top-style: solid;">
-        <ul class="social-icons">
-            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-            <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
-        </ul>
-    </nav>>
-</footer>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+            <!-- </div> -->
+        </section>
+    </div>
+    <footer class="footer">
+        <nav class="d-flex">
+            <ul class="social-icons">
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+            </ul>
+        </nav>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="/assets/js/jquery.bootstrap-autohidingnavbar.min.js"></script>
+    <script src="/assets/js/isotope.pkgd.min.js"></script>
+    <script>
+        var $grid = $('.works-container').isotope({
+            itemSelector: '.worksitem',
+            layoutMode: 'fitRows'
+        });
+
+        $('.selector').on('click', function() {
+            var filterValue = $(this).attr('data-filter');
+            $grid.isotope({
+                filter: filterValue
+            });
+        })
+    </script>
 </body>
+
 </html>
