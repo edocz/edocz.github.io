@@ -227,6 +227,7 @@ body a:hover {
 .workshead p {
     max-width: 700px;
     font-size: 20px;
+    margin-bottom: 0px;
     font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     color: rgba(255, 255, 255, .8);
 }
@@ -306,6 +307,7 @@ body a:hover {
 .wallpapershead p {
     max-width: 700px;
     font-size: 20px;
+    margin-bottom: 0px;
     font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     color: rgba(255, 255, 255, .8);
 }
@@ -385,6 +387,7 @@ body a:hover {
 .storyhead p {
     max-width: 700px;
     font-size: 20px;
+    margin-bottom: 0px;
     font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     color: rgba(255, 255, 255, .8);
 }
