@@ -236,6 +236,7 @@ body a:hover {
     margin-right: 10px;
     margin-bottom: 10px;
     background-color: #2e2d2d;
+    cursor: pointer;
 }
 
 .worksrow .worksitem:hover {
@@ -255,7 +256,7 @@ body a:hover {
     outline: none;
     width: 150px;
     height: 54px;
-    background: transparent;
+    background: rgba(255, 255, 255, 0);
     border: 1px solid rgba(255, 255, 255, 0.12);
     display: inline-block;
     margin-right: 20px;
@@ -271,22 +272,78 @@ body a:hover {
     background-color: rgba(255, 255, 255, .1);
 }
 
-.summaryrow {
-    justify-content: center;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
+.wallpapershead {
+    margin-bottom: 60px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid rgba(255, 255, 255, .12);
 }
 
-.summaryrow>div {
-    background-color: rgb(85, 85, 85);
+.wallpapershead h1 {
+    font-size: 80px;
+    font-style: italic;
+    font-weight: bold;
     color: #fff;
-    height: 600px;
-    border: 4px solid rgb(0, 0, 0);
-    /* padding: 15px; */
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+.wallpapershead p {
+    max-width: 700px;
+    font-size: 20px;
+    color: rgba(255, 255, 255, .8);
+}
+
+.wallpapersrow {
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.wallpapersrow .wallpapersitem {
+    width: 560px;
+    height: 400px;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.wallpapersrow .wallpapersitem .wallpapers-pic {
+    widows: 560px;
+    height: 320px;
+    padding: 0;
+}
+
+.wallpapersrow .wallpapersitem .wallpapers-footer {
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.wallpapersrow .wallpapersitem .wallpapers-footer .wallpapers-title {
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    color: rgba(255, 255, 255, 1);
+}
+
+.wallpapersrow .wallpapersitem .wallpapers-footer .wallpapers-button {
+    position: relative;
+    width: 140px;
+    height: 44px;
+    color: rgba(255, 255, 255, .60);
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid rgba(255, 255, 255, .12);
+    margin-top: 20px;
+}
+
+.wallpapersrow .wallpapersitem .wallpapers-footer .wallpapers-button:hover {
+    border: 1px solid rgba(255, 255, 255, 1);
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, .1);
 }
 
 .social-icons {
