@@ -531,10 +531,8 @@ body a:hover {
     animation-direction: alternate;
 }
 
-.scroll-top-arrow {
-    margin: auto;
-    font-size: 24px;
-    color: #8590ab;
+.social-icons .fab {
+    color: rgba(255, 255, 255, 1)
 }
 
 .animated-icon {
