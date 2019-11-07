@@ -129,20 +129,7 @@
             animationDuration: 300
         });
 
-        var $grid = $('.works-container').isotope({
-            itemSelector: '.worksitem',
-            layoutMode: 'fitRows'
-        });
-
-        $('.selector').on('click', function() {
-            var filterValue = $(this).attr('data-filter');
-            $grid.isotope({
-                filter: filterValue
-            });
-        });
-
         window.onscroll = function() {
-            console.log(document.documentElement.clientHeight, document.documentElement.scrollTop);
             if ((document.documentElement.clientHeight + 10) < document.documentElement.scrollTop) {
                 $('#scroll-top-button').show();
             } else {
