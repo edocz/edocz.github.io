@@ -81,7 +81,7 @@ body a:hover {
 .navbar {
     background-color: transparent;
     font-size: 18px;
-    font-family: "PingFang SC Bold", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     font-style: italic;
     font-weight: bold;
     padding: 0;
@@ -172,7 +172,7 @@ body a:hover {
 
 .recenthead h1 {
     font-size: 80px;
-    font-family: "PingFang SC Bold", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     font-style: italic;
     font-weight: bold;
     color: #fff;
@@ -183,7 +183,7 @@ body a:hover {
 .recenthead p {
     max-width: 700px;
     font-size: 20px;
-    font-family: "PingFang SC Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     color: rgba(255, 255, 255, .8);
 }
 
@@ -216,7 +216,7 @@ body a:hover {
 
 .workshead h1 {
     font-size: 80px;
-    font-family: "PingFang SC Bold", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     font-style: italic;
     font-weight: bold;
     color: #fff;
@@ -227,7 +227,7 @@ body a:hover {
 .workshead p {
     max-width: 700px;
     font-size: 20px;
-    font-family: "PingFang SC Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     color: rgba(255, 255, 255, .8);
 }
 
@@ -270,7 +270,7 @@ body a:hover {
     margin-right: 20px;
     font-size: 16px;
     font-weight: bold;
-    font-family: "PingFang SC Bold", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     color: rgba(255, 255, 255, .60);
     transform: .3s all;
 }
@@ -295,7 +295,7 @@ body a:hover {
 
 .wallpapershead h1 {
     font-size: 80px;
-    font-family: "PingFang SC Bold", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     font-style: italic;
     font-weight: bold;
     color: #fff;
@@ -306,7 +306,7 @@ body a:hover {
 .wallpapershead p {
     max-width: 700px;
     font-size: 20px;
-    font-family: "PingFang SC Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     color: rgba(255, 255, 255, .8);
 }
 
@@ -342,7 +342,7 @@ body a:hover {
 .wallpapersrow .wallpapersitem .wallpapers-footer .wallpapers-title {
     margin-top: 30px;
     font-size: 20px;
-    font-family: "PingFang SC Bold", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     font-weight: bold;
     font-style: italic;
     color: rgba(255, 255, 255, 1);
@@ -355,7 +355,7 @@ body a:hover {
     color: rgba(255, 255, 255, .60);
     background-color: rgba(255, 255, 255, 0);
     border: 1px solid rgba(255, 255, 255, .12);
-    font-family: "PingFang SC Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     margin-top: 20px;
 }
 
@@ -374,7 +374,7 @@ body a:hover {
 
 .storyhead h1 {
     font-size: 80px;
-    font-family: "PingFang SC Bold", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     font-style: italic;
     font-weight: bold;
     color: #fff;
@@ -385,7 +385,7 @@ body a:hover {
 .storyhead p {
     max-width: 700px;
     font-size: 20px;
-    font-family: "PingFang SC Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     color: rgba(255, 255, 255, .8);
 }
 
