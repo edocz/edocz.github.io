@@ -75,24 +75,90 @@
                     <p>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse</p>
                 </hgroup>
 
-                <div class="recentrow">
-                    <div class="recentitem col-4 col-sm"><span></span></div>
-                    <div class="recentitem col-4 col-sm"><span></span></div>
-                    <div class="recentitem col-4 col-sm"><span></span></div>
+                <div class="recentcontainer">
+                    <div class="grid-sizer"></div>
+                    <div class="recentitem c-2 r-1">
+                        <div class="img" data-url="https://s2.ax1x.com/2019/11/07/MF5cgU.jpg">
+                            <div class="mask">
+                                <div>
+                                    <span>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recentitem c-1 r-1">
+                        <div class="img" data-url="https://s2.ax1x.com/2019/11/07/MF8Na6.jpg">
+                            <div class="mask">
+                                <div>
+                                    <span>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recentitem c-1 r-2">
+                        <div class="img" data-url="https://s2.ax1x.com/2019/11/07/MF8Na6.jpg">
+                            <div class="mask">
+                                <div>
+                                    <span>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recentitem c-1 r-1">
+                        <div class="img" data-url="https://s2.ax1x.com/2019/11/07/MF5cgU.jpg">
+                            <div class="mask">
+                                <div>
+                                    <span>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recentitem c-1 r-1">
+                        <div class="img" data-url="https://s2.ax1x.com/2019/11/07/MkFZPP.jpg">
+                            <div class="mask">
+                                <div>
+                                    <span>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recentitem c-2 r-1">
+                        <div class="img" data-url="https://s2.ax1x.com/2019/11/07/MF5cgU.jpg">
+                            <div class="mask">
+                                <div>
+                                    <span>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recentitem c-1 r-1">
+                        <div class="img" data-url="https://s2.ax1x.com/2019/11/07/MkFZPP.jpg">
+                            <div class="mask">
+                                <div>
+                                    <span>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recentitem c-1 r-1">
+                        <div class="img" data-url="https://s2.ax1x.com/2019/11/07/MF5cgU.jpg">
+                            <div class="mask">
+                                <div>
+                                    <span>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recentitem c-1 r-1">
+                        <div class="img" data-url="https://s2.ax1x.com/2019/11/07/MF5cgU.jpg">
+                            <div class="mask">
+                                <div>
+                                    <span>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="recentrow">
-                    <div class="recentitem col-12 col-sm"><span></span></div>
-                </div>
-                <div class="recentrow">
-                    <div class="recentitem col-6 col-sm"><span></span></div>
-                    <div class="recentitem col-6 col-sm"><span></span></div>
-                </div>
-                <div class="recentrow">
-                    <div class="recentitem col-8 col-sm"><span></span></div>
-                    <div class="recentitem col-2 col-sm"><span></span></div>
-                    <div class="recentitem col-2 col-sm"><span></span></div>
-                </div>
-
             </div>
         </section>
     </div>
@@ -114,7 +180,34 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0/dist/smooth-scroll.polyfills.min.js"></script>
     <script src="/assets/js/jquery.bootstrap-autohidingnavbar.min.js"></script>
+    <script src="/assets/js/isotope.pkgd.min.js"></script>
     <script src="/assets/js/main.js"></script>
+    <script>
+        $('.recentcontainer').isotope({
+            itemSelector: '.recentitem',
+            percentPosition: true,
+            masonry: {
+                columnWidth: '.grid-sizer'
+            }
+        });
+
+        $('.recentitem .img').hover(function() {
+            $(this).find('.mask').show();
+        }, function() {
+            $(this).find('.mask').hide();
+        });
+
+        $(document).ready(function() {
+            $('.recentitem .img').each(function(i, el) {
+                var url = $(el).data('url');
+                if (url) {
+                    var style = "url('" + url + "') no-repeat center center";
+                    $(el).css('background', style);
+                    $(el).css('background-size', 'cover');
+                }
+            });
+        })
+    </script>
 </body>
 
 </html>
